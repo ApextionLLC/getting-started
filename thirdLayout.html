@@ -1,0 +1,205 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Awesome Code</title>
+    <base href="https://www.tutorialrepublic.com/"> <!--reference a page while companion placed in body copy references a sublink -->
+    <style> /* every reference to this list adobts the parameters defined, the more specific the better */
+        section { /* individual sections withing the parent in the page */
+            display: inline-block;
+            width: 30%;
+            border: 1px solid red;
+            padding: 10px;
+            text-align: justify;
+        }
+        div { /* parent in the page? */
+            padding: 10px;
+        }
+        nav li { /* navigation list */
+            display: inline-block;
+            width: 30%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            font-weight: bold;            
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <ul> <!--lists of nav buttons-->
+                <li>
+                    <details> <!--drop down menu-->
+                        <summary>SERVICES</summary>
+                        <a href="http://www.google.com">Service One</a> <!--menu selections-->
+                        <br> <!--break between lines-->
+                        <a href="http://www.google.com">Service Two</a>
+                        <br>
+                        <a href="http://www.google.com">Service Three</a>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>SHOP</summary>
+                        <a href="http://www.google.com">Item One</a>
+                        <br>
+                        <a href="http://www.google.com">Item Two</a>
+                        <br>
+                        <a href="http://www.google.com">Item Three</a>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>CONTACT</summary>
+                        <a href="#Contact Support">Contact Support</a>
+                    </details>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <section>
+        <article> <!--parent tag-block, content placed here-->
+            <h1>Introduction to Article One</h1> <!--heading in order from large to small-->
+            <p>Article one is just some random information I put together for learning purposes.</p>
+        </article>
+        <span style="color:red;"> <!--only affects what is placed between this tag-->
+        <p><strong>This is a paragraph of nothing.</strong> <!--emphasized text here-->
+            <br>
+        </p>
+        </span>
+        <p>Nothing is essentially a sentence of no single thing in particular.</p>
+        <p>Enter email for more information.
+            <address>
+              Or you can
+                <a href="mailto:webmaster@example.com">click here</a> to email us.
+            </address>
+        </p>
+            email:
+            <input type="text" email="email address"> <!--interactive features-->
+            <button type="submit" value="Submit">Submit</button>
+            <button type="reset" value="Reset">Reset</button></p>
+        </section>
+        <section>
+                <form>
+                    <p>Leave your Comment:
+                        <br>
+                        <textarea cols="50" rows="3"></textarea> <!--allow user to input information-->
+                    </p>
+                </form>
+            <p>
+                Ut eget quam condimentum, molestie neque nec, volutpat ex. Aliquam elementum porttitor risus, in volutpat urna interdum tristique.
+                Maecenas leo diam, posuere at tempor ac, <q><i>How much wood would a woodchuck chuck if a woodchuck would chuck wood?</i></q> Lorem ipsum dolor sit amet eleifend quis est. Nulla mollis justo et sapien euismod, eget dictum nibh volutpat.
+                Nam ante tellus, hendrerit varius porta sit amet, facilisis mattis velit. Proin luctus eget lectus nec feugiat. Phasellus
+                blandit elementum, mauris ullamcorper placerat.
+            </p>
+        </section>
+        <section>
+            <p>Choose your favorite color from the menu below.</p>
+            <input type="text" list="color">
+            <datalist id="color"> <!--data that can be listed or typed-->
+                <option value="red">
+                <option value="yellow">
+                <option value="blue">
+                <option value="orange">
+                <option value="green">
+                <option value="purple"></option>
+            </datalist>
+            <br>
+            <br>
+            <hr> <!--horizontal line-->
+                <form action="http://www.example.com/" method="post"><!--form that lets you submit to a site?-->
+                <fieldset>
+                    <legend>Color Choices</legend>
+                    <input type="radio" name="color" value="red" id="red">
+                    <label for="red">red</label>
+                    <input type="radio" name="color" value="yellow" id="yellow">
+                    <label for="yellow">yellow</label>
+                    <input type="radio" name="color" value="blue" id="blue">
+                    <label for="blue">blue</label>
+                    <input type="radio" name="color" value="orange" id="orange">
+                    <label for="orange">orange</label>
+                    <input type="radio" name="color" value="green" id="green">
+                    <label for="green">green</label></b>
+                </fieldset>
+            </form>
+            <hr>
+            <p>Choose a color</p>
+                <form>
+                    <select>
+                        <optgroup label="Primary Colors"><!--groups related objects in a drop down menu-->
+                            <option value="red">red</option>
+                            <option value="yellow">yellow</option>
+                            <option value="blue">blue</option>
+                        </optgroup>
+                        <optgroup label="Secondary Colors">
+                            <option value="orange">orange</option>
+                            <option value="green">green</option>
+                            <option value="purple">purple</option>
+                        </optgroup>
+                    </select>
+                </form>
+            <hr>
+            <p><small>This way <small>to great </small>success at </small>
+                <a href="html-reference/html5-tags.php">HTML5</a>.</p>
+            <!--this is what is reference from the base tag-->
+        </section>
+    </div>
+    <div>
+        <footer>
+            <p style="text-align: center";>
+            This is how a<sub> sub code will appear</sub> You might use this to reference a link for a definition.
+            This is how a<sup> sub code will appear </sup> dolor sit amet. 
+            You will use this tag in order to have a hover effect <abbr title="abbr title">Reference.</abbr>
+            This is some <mark>very important information.</mark><pre>
+                    I like that the pre      tag, preserves it exactly like it's written</pre>
+            Ut eget quam condimentum, molestie neque nec, volutpat ex. Aliquam elementum porttitor risus, in volutpat urna interdum
+            tristique. Maecenas leo diam, posuere at tempor ac, eleifend quis est. Nulla mollis justo et sapien euismod, eget
+            dictum nibh volutpat. Nam ante tellus, hendrerit varius porta sit amet, facilisis mattis velit. Proin luctus eget
+            lectus nec feugiat. Phasellus blandit elementum nibh, eget dapibus mauris ullamcorper placerat. Proin gravida quis
+            nisi vel pretium. Ut interdum eros et convallis auctor. Curabitur dapibus leo quis velit luctus, at lobortis felis
+            facilisis. Aliquam metus arcu, molestie non ante sed, commodo sodales lorem. Nullam venenatis eget erat a fermentum.
+            Curabitur id porta lorem, a consectetur enim. Aenean in ex feugiat, imperdiet purus in, convallis mauris. Fusce molestie
+            leo at sem posuere pulvinar. Praesent et enim in magna cursus porta quis at magna. Ut volutpat nulla sit amet nibh
+            congue ullamcorper. Integer vulputate porttitor justo, eu commodo lorem. Integer et dui pharetra leo egestas interdum.
+            Maecenas fermentum ante eu lacus maximus, eu feugiat elit iaculis. Suspendisse sit amet eros ut tellus fermentum
+            non elit tempus imperdiet
+            </p>
+        <p id="Contact Support">
+        </p>
+            <table>
+                <colgroup>
+                    <col style="background-color:blue">
+                    <col span="1" style="background-color:blueviolet">
+                </colgroup>
+                <caption>Contact Support</caption>
+                <thead>
+                    <tr>
+                        <th style="color: aliceblue">Name</th>
+                        <th style="color: aliceblue">Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="color: aliceblue">John Carter</td>
+                        <td style="color: aliceblue">johncarter@mail.com</td>
+                    </tr>
+                    <tr>
+                        <td style="color: aliceblue">Peter Parker</td>
+                        <td style="color: aliceblue">peterparker@mail.com</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Copyright &copy; 2018</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </footer>
+    </div>
+</body>
+
+</html>
